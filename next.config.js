@@ -1,8 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    env: {
-        APIURL: 'https://dev-api.jpauction.in/api/v1',
-    },
+module.exports = {
     webpack: (config, { dev }) => {
         if (dev) {
             config.module.rules.forEach(rule => {
@@ -18,5 +14,3 @@ const nextConfig = {
         return config;
     },
 };
-
-export default nextConfig;
